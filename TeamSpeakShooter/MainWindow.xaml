@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TeamSpeakShooter"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="TS Shooter" Height="500" Width="350">
     <Grid>
-        
+        <Image HorizontalAlignment="Left" Height="100" Margin="-122,17,0,0" VerticalAlignment="Top" Width="100"/>
+        <DockPanel>
+            <Menu DockPanel.Dock="Top" Height="20">
+                <MenuItem Header="Plik..">
+                    <MenuItem Header="Otwórz folder.." Height="20"/>
+                    <MenuItem Header="Ustawienia" />
+                    <Separator />
+                    <MenuItem Header="Wyjdź" />
+                </MenuItem>
+                <MenuItem Header="Pomoc">
+                    <MenuItem Header="O programie.."/>
+                </MenuItem>
+            </Menu>
+            
+            <TextBox AcceptsReturn="True" />
+        </DockPanel>
+
     </Grid>
 </Window>
